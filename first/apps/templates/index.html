@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MY Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Hak's Page</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">About me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">환영합니다!</div>
+        <div class="intro-heading text-uppercase">미세먼지 조절 창문 여닫이</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">더 알고싶어요!</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Services</h2>
+          <h3 class="section-subheading text-muted">미세먼지의 양에 따라 창문을 자동/수동으로 여닫는 서비스입니다.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">설명</h4>
+          <p class="text-muted">공기중 미세먼지 정보를 기상청같은 다른 사이트에서 얻어와 아두이노와 연동하여 집안의 창문을 자동 또는 수동으로 여닫고 관리할수있는 서비스입니다. 이밖에도 창문뿐 아니라 다른 기기들도 관리할 생각입니다.</p>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Progress</h2>
+          <h3 class="section-subheading text-muted">현재 서비스 진행정도</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/portfolio/05-thumbnail.jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Window Control</h4>
+            <p class="text-muted">Micro dust control window</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Developer</h2>
+          <h3 class="section-subheading text-muted">현재 한양대학교 ERICA캠퍼스에 재학중인 멋쟁이사자처럼 7기 정성학입니다.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'img/team/me.jpg' %}" alt="">
+            <h4>SeongHak Jung</h4>
+              <br>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Portfolio Modals -->
+
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Window Control</h2>
+                <p class="item-intro text-muted">개발진척</p>
+                <img class="img-fluid d-block mx-auto" src="{% static 'img/portfolio/05-full.jpg' %}" alt="">
+                <p>아직 개발단계에 들어가지 못했습니다.</p>
+                <ul class="list-inline">
+                  <li>Date: March 2019</li>
+                  <li>Category: IOT</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/agency.min.js' %}"></script>
+
+</body>
+
+</html>
